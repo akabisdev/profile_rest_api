@@ -65,7 +65,7 @@ class UserProfile(AbstractBaseUser, PermissionsMixin):
 class UserFeedModel(models.Model):
     """Create user status feed to store in database"""
 
-    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    user_profile = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     status = models.CharField(max_length=255)
     created_on = models.DateTimeField(auto_now_add=True)
 
