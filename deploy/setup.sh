@@ -8,8 +8,8 @@ PROJECT_GIT_URL='git@github.com:akabisdev/profile_rest_api.git'
 PROJECT_BASE_PATH='/usr/local/apps/profiles-rest-api'
 
 echo "Installing dependencies..."
-yum update
-yum install -y python3-dev python3-venv sqlite python-pip supervisor nginx git
+apt-get update
+apt-get install -y python3-dev python3-venv sqlite python-pip supervisor nginx git
 
 # Create project directory
 mkdir -p $PROJECT_BASE_PATH
