@@ -27,8 +27,8 @@ $PROJECT_BASE_PATH/env/bin/pip install uwsgi==2.0.18
 cd $PROJECT_BASE_PATH
 # $PROJECT_BASE_PATH/env/bin/python manage.py migrate
 # $PROJECT_BASE_PATH/env/bin/python manage.py collectstatic --noinput
-$PROJECT_BASE_PATH/app/python3 manage.py migrate
-$PROJECT_BASE_PATH/app/python3 manage.py collectstatic --noinput
+$PROJECT_BASE_PATH/app/python manage.py migrate
+$PROJECT_BASE_PATH/app/python manage.py collectstatic --noinput
 
 # Configure supervisor
 cp $PROJECT_BASE_PATH/deploy/supervisor_profiles_api.conf /etc/supervisor/conf.d/profiles_api.conf
